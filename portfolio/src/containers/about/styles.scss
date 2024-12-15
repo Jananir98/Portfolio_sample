@@ -1,0 +1,78 @@
+.about {
+  display: grid;
+  grid-template-columns: 2fr 1fr; // More space for the content
+  align-items: flex-start;
+  padding: 20px;
+  max-width: 1000px;
+  width: 100%;
+  color: white;
+  margin: 0 auto;
+
+  .about-content {
+    grid-column: 1 / 2;
+    text-align: left;
+    padding-left: 10px;
+    width: calc(100% - 20px); 
+  }
+
+  .about-head {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 40px;
+  }
+
+  .about-para {
+    text-align: left;
+    line-height: 1.6;
+    font-size: 1.3rem;
+    margin-top: 150px;
+    margin-bottom: 20px;
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 20px 0;
+  }
+
+  .personal-info {
+    h1 {
+      text-align: left;
+      margin-bottom: 10px;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .info-item {
+      display: flex;
+      margin-bottom: 10px;
+
+      p {
+        margin: 0;
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  .about-logo {
+    grid-column: 2 / 3;
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    margin-top: 250px;
+
+    .arrow {
+      margin-right: 20px;
+      height: 50px;
+      width: 50px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}

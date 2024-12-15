@@ -1,0 +1,45 @@
+.skills {
+    padding: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+    color: white;
+  
+    .skills-header {
+      text-align:left;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  
+    .skills-content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); // Two columns
+      gap: 20px; // Gap between the items
+    }
+  
+    .skill-item {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      background-color: #333;
+      border-radius: 5px;
+  
+      .skill-info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px; // Space between text and progress bar
+  
+        .skill-name {
+          font-size: 1.2rem;
+        }
+  
+        .skill-percentage {
+          font-size: 1.2rem;
+        }
+      }
+  
+      .skill-bar {
+        width: 100%;
+      }
+    }
+  }
+  
